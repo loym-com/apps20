@@ -1,8 +1,8 @@
 {
-    "name": "CornerstonePlatform Donations",
+    "name": "Cornerstone Platform",
     "version": "20.0.1.0.0",
-    "category": "Accounting/Accounting",
-    "summary": "Import and reconcile monthly CornerstonePlatform donations",
+    "category": "Accounting",
+    "summary": "GraphQL Integration",
     "depends": ["account", "base_import"],
     "data": [
         "security/ir.access.csv",

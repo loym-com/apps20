@@ -23,4 +23,28 @@
         <field name="view_mode">form</field>
         <field name="target">new</field>
     </record>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.cornerstoneplatform</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='account']" position="inside">
+                <block title="Cornerstone Platform" name="cornerstoneplatform_settings">
+                    <setting string="GraphQL URL" help="URL of the CornerstonePlatform GraphQL endpoint.">
+                        <field name="cornerstoneplatform_graphql_url" placeholder="https://example.com/_graphql"/>
+                    </setting>
+                    <setting string="Session Cookie" help="Authenticated CSNSESSID cookie value.">
+                        <field name="cornerstoneplatform_cookie" password="True"/>
+                    </setting>
+                    <setting string="Debit Account Code" help="Odoo account code used for the debit line.">
+                        <field name="cornerstoneplatform_debit_account_code"/>
+                    </setting>
+                    <setting string="Journal Code" help="Code of the general journal used for the entry.">
+                        <field name="cornerstoneplatform_journal_code"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
 </odoo>
