@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="cornerstoneplatform.ImportFromCornerstone">
+        <DropdownItem onSelected.bind="this.openWizard">
+            <i class="oi oi-fw me-1" data-icon="download"/>Get from Cornerstone
+        </DropdownItem>
+    </t>
+</templates>
