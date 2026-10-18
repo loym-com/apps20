@@ -1,6 +1,7 @@
 {
     "name": "Cornerstone Platform",
     "version": "20.0.1.0.0",
+    "author": "Henrik Norlin",
     "category": "Accounting",
     "summary": "GraphQL Integration",
     "depends": ["account", "base_import"],
